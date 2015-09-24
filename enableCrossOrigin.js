@@ -14,7 +14,7 @@
         XMLHttpRequest.prototype.open = function (method, url, async, user, password) {
             this.myBase = this.getBaseUrl(location.href);   // Can probably just use location.origin + "/"
 
-            // Here you can use a white/black list to include(exclude domains
+            // Here you can use a white/black list to include/exclude domains.
             if (this.myBase !== this.getBaseUrl(url)) {
                 this.crossDomainRequest = true;
                 this.openParams = [method, url, async, user, password];

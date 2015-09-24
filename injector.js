@@ -3,7 +3,7 @@
  */
 
 (function (win) {
-    // Check for custom money patch
+    // Check for custom monkey patch
     if(win.crossOriginEnabled_noConflict12348767565){
         return;
     }
