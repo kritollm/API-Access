@@ -8,7 +8,7 @@
         return;
     }
     var scriptNode = document.createElement('script');
-    scriptNode.src = chrome.extension.getURL("enableCrossOrigin.js");
+    scriptNode.src = chrome.extension.getURL("enablecrossorigin.js");
     (document.head || document.documentElement).appendChild(scriptNode);
     scriptNode.parentNode.removeChild(scriptNode);
 
